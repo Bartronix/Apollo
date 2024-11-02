@@ -1,0 +1,57 @@
+.controlpanel {
+	position: relative;
+    border: 2px #858585 solid;
+    height: 580px; 
+    width: 180px; 
+    float: right; 
+    background-color: #c0c0c0;
+    padding: 10px;
+}
+
+.button-square {
+    width: 50px;
+    height: 15px;
+    position: absolute;
+    border-radius: 0%;
+    box-shadow: 0 0 0 2px #C70039, 0 5px 0 2px #C70039, 0 12px 0 8px #fff, 0 12px 0 10px #181047;
+    background: repeating-linear-gradient(45deg, #C70039, #C70039 2px, transparent 2px, transparent 4px), #fff;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.button-square-click {
+    box-shadow: 0 0 0 2px #C70039, 0 5px 0 4px #C70039, 0 12px 0 8px #fff, 0 12px 0 10px #181047;
+}
+
+.button-square span {
+    margin-top: 40px;
+    display: block;
+    font-size: 0.8em;
+}
+
+.button-round {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 0 2px #28B463, 0 5px 0 2px #28B463, 0 12px 0 8px #fff, 0 12px 0 10px #181047;
+    margin-top: -30px;
+    background: repeating-linear-gradient(45deg, #28B463, #28B463 2px, transparent 2px, transparent 4px), #fff;
+    cursor: pointer;
+}
+
+.button-round-red {
+    box-shadow: 0 0 0 2px #C70039, 0 5px 0 2px #C70039, 0 12px 0 8px #fff, 0 12px 0 10px #181047;
+    background: repeating-linear-gradient(45deg, #C70039, #C70039 2px, transparent 2px, transparent 4px), #fff;
+}
+
+.button-round-click {
+    box-shadow: 0 0 0 2px #28B463, 0 5px 0 4px #28B463, 0 12px 0 8px #fff, 0 12px 0 10px #181047;
+}
+
+.button-round span {
+    margin-top: 45px;
+    margin-left: -15px;
+    display: block;
+}

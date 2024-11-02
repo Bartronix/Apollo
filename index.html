@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Going to the moon</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/controlpanel.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">		
+	</head>
+	<body>
+		<div id="container" style="display: block; margin: 0 auto; width: 1010px; height: 600px;">
+			<canvas id="game" width="800" height="600"></canvas>
+			<div id="controlpanel" class="controlpanel">
+				<div class="button-square" id="weathertest" style="top: 10px; left: 30px;" onclick='performCheck("weathertest")'>
+					<span>Weather testing</span>
+				</div>
+				<div class="button-square" id="clockstart" style="top: 10px; left: 120px;" onclick='performCheck("clockstart")'>
+					<span>Prepare clock</span>
+				</div>
+				<div class="button-square" id="boostpreparation" style="top: 90px; left: 30px;" onclick='performCheck("boostpreparation")'>
+					<span>Boost preparation</span>
+				</div>
+				<div class="button-square" id="systemscheck" style="top: 90px; left: 120px;" onclick='performCheck("systemscheck")'>
+					<span>Systems check</span>
+				</div>
+				<div class="button-square" id="communicationscheck" style="top: 170px; left: 30px;" onclick='performCheck("communicationscheck")'>
+					<span>Comm. check</span>
+				</div>
+				<div class="button-square" id="cardiacsim" style="top: 170px; left: 120px;" onclick='performCheck("cardiacsim")'>
+					<span>Cardiac sim</span>
+				</div>
+				<div class="button-round" id="launch" style="top: 300px; left: 85px;" onclick="launch();">
+					<span>Launch!</span>
+				</div>
+				<div style="display: none;" class="button-round button-round-red" style="top: 370px; left: 85px;" onclick="abort();"></div>
+				<div style="margin-top: 500px; font-size: 0.7em;">
+					Version 0.6			
+				</div>
+				<br><br>
+				<a target="_blank" href="info.html">More info</a>
+				<audio id="audioplayer" style="display: none;" src="sounds/590329main_ringtone_SDO_launchNats.mp3" controls> </audio> 
+			</div>
+			<div style="clear:both;"></div>			
+			<textarea id="console"></textarea>
+		</div>		
+		<script src="js/game.js"></script>
+	</body>
+</html>
